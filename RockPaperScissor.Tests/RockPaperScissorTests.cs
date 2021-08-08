@@ -20,68 +20,89 @@ namespace RockPaperScissor.Tests
             _sut = new RockPaperScissorService();
         }
 
+        #region VALID ENTRY TESTS
         [TestMethod]
         public void IsValidEntry_Valid_When_P_Entered()
         {
-            var results = _sut.PlayGame('K', 'R');
+            string results = _sut.PlayGame('K', 'R');
             Assert.AreEqual(OutcomeEnums.Wrong_Entry.ToString(), results);
 
         }
+        public void IsValidEntry_NotValid_When_P_Entered()
+        {
+            string results = _sut.PlayGame('M', 'R');
+            Assert.AreEqual(OutcomeEnums.Wrong_Entry.ToString(), results);
 
+        }
+        #endregion
+
+        #region TIE TESTS
         [TestMethod]
         public void PlayGame_ItsTie_WhenPlayerEntry_R_ComputerEntry_R()
         {
-            var results = _sut.PlayGame('R', 'R');
+            string results = _sut.PlayGame('R', 'R');
             Assert.AreEqual(OutcomeEnums.Tie.ToString(), results);
         }
 
         [TestMethod]
-        public void PlayGame_PLayerWins_WhenPlayerEntry_P_ComputerEntry_R()
+        public void PlayGame_ItsTie_WhenPlayerEntry_P_ComputerEntry_P()
         {
-            var results = _sut.PlayGame('P', 'R');
+            string results = _sut.PlayGame('P', 'P');
+            Assert.AreEqual(OutcomeEnums.Tie.ToString(), results);
+        }
+
+        [TestMethod]
+        public void PlayGame_ItsTie_WhenPlayerEntry_S_ComputerEntry_S()
+        {
+            string results = _sut.PlayGame('S', 'S');
+            Assert.AreEqual(OutcomeEnums.Tie.ToString(), results);
+        }
+
+        #endregion
+
+        #region PLAYER WINS TESTS
+        [TestMethod]
+        public void PlayGame_PlayerWins_WhenPlayerEntry_R_ComputerEntry_S()
+        {
+            string results = _sut.PlayGame('R', 'S');
+            Assert.AreEqual(OutcomeEnums.Player_Wins.ToString(), results);
+        }
+
+        [TestMethod]
+        public void PlayGame_PlayerWins_WhenPlayerEntry_S_ComputerEntry_P()
+        {
+            string results = _sut.PlayGame('S', 'P');
+            Assert.AreEqual(OutcomeEnums.Player_Wins.ToString(), results);
+        }
+
+        public void PlayGame_PlayerWins_WhenPlayerEntry_P_ComputerEntry_R()
+        {
+            string results = _sut.PlayGame('P', 'R');
+            Assert.AreEqual(OutcomeEnums.Player_Wins.ToString(), results);
+        }
+        #endregion
+
+        #region COMPUTER WINS TESTS
+        [TestMethod]
+        public void PlayGame_ComputerWins_WhenPlayerEntry_S_ComputerEntry_R()
+        {
+            string results = _sut.PlayGame('S', 'R');
             Assert.AreEqual(OutcomeEnums.Computer_Wins.ToString(), results);
         }
 
         [TestMethod]
-        public void PlayGame_ComputerrWins_WhenPlayerEntry_S_ComputerEntry_R()
+        public void PlayGame_ComputerWins_WhenPlayerEntry_R_ComputerEntry_S()
         {
-            var results = _sut.PlayGame('S', 'R');
+            string results = _sut.PlayGame('R', 'P');
             Assert.AreEqual(OutcomeEnums.Computer_Wins.ToString(), results);
         }
 
-        //[TestMethod]
-        //public void IsValidEntry_Valid_When_R_Entered()
-        //{
-        //    var results = _sut.PlayGame('K', 'R');
-        //    Assert.AreEqual("wrong entry", results);
-        //}
+        public void PlayGame_ComputerWins_WhenPlayerEntry_P_ComputerEntry_R()
+        {
+            string results = _sut.PlayGame('P', 'S');
+            Assert.AreEqual(OutcomeEnums.Computer_Wins.ToString(), results);
+        }
+        #endregion
 
-        //[TestMethod]
-        //public void IsHumanWin_HumanWins_When_HumanEntered_P_ComputerEntered_R()
-        //{
-        //    var results = _sut.PlayGame('P', 'R');
-        //    Assert.AreEqual("Human Wins", results);
-        //}
-
-        //[TestMethod]
-        //public void IsHumanWin_ComputerWins_When_HumanEntered_P_ComputerEntered_S()
-        //{
-        //    var results = _sut.PlayGame('P', 'S');
-        //    Assert.AreEqual("Computer Wins", results);
-        //}
-
-        //[TestMethod]
-        //public void IsHumanWin_Ties_When_HumanEntered_P_ComputerEntered_P()
-        //{
-        //    var results = _sut.PlayGame('P', 'P');
-        //    Assert.AreEqual("Its Tie", results);
-        //}
-
-        //[TestMethod]
-        //public void IsHumanWin_WRONGENTRY_When_HumanEntered_Y_ComputerEntered_P()
-        //{
-        //    var results = _sut.PlayGame('Y', 'P');
-        //    Assert.AreEqual("wrong entry", results);
-        //}
     }
 }
