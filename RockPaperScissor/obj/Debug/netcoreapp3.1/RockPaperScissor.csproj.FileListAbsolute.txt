@@ -1,4 +1,3 @@
-C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissor\obj\Debug\netcoreapp3.1\RockPaperScissor.csproj.AssemblyReference.cache
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissor\obj\Debug\netcoreapp3.1\RockPaperScissor.AssemblyInfoInputs.cache
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissor\obj\Debug\netcoreapp3.1\RockPaperScissor.AssemblyInfo.cs
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissor\obj\Debug\netcoreapp3.1\RockPaperScissor.csproj.CoreCompileInputs.cache

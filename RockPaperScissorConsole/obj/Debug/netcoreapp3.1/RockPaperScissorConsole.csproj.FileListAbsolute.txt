@@ -4,7 +4,6 @@ C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\Ro
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\bin\Debug\netcoreapp3.1\RockPaperScissorConsole.runtimeconfig.dev.json
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\bin\Debug\netcoreapp3.1\RockPaperScissorConsole.dll
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\bin\Debug\netcoreapp3.1\RockPaperScissorConsole.pdb
-C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\obj\Debug\netcoreapp3.1\RockPaperScissorConsole.csproj.AssemblyReference.cache
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\obj\Debug\netcoreapp3.1\RockPaperScissorConsole.AssemblyInfoInputs.cache
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\obj\Debug\netcoreapp3.1\RockPaperScissorConsole.AssemblyInfo.cs
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\obj\Debug\netcoreapp3.1\RockPaperScissorConsole.csproj.CoreCompileInputs.cache
