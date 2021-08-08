@@ -14,6 +14,7 @@ namespace RockPaperScissor.RockPaperScissor.Service
         }
 
         public enum GesturEnums { Paper = 1, Rock, Scissor }
+        
         public enum OutcomeEnums { Player_Wins = 1, Computer_Wins, Tie,
             Wrong_Entry
         }

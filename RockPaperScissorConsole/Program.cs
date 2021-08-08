@@ -46,14 +46,14 @@ namespace RockPaperScissorConsole
 
                 if (consoleMessage == OutcomeEnums.Player_Wins.ToString())
                     humanWins++;
-                else if (consoleMessage.ToUpper() == OutcomeEnums.Computer_Wins.ToString())
+                else if (consoleMessage == OutcomeEnums.Computer_Wins.ToString())
                     computerWins++;
             }
 
             if (humanWins > computerWins) 
-                ConsoleMessage("Player won the game.");
+                ConsoleMessage("Player wins the game.");
             else if (humanWins < computerWins)
-                ConsoleMessage("Computer won the game.");
+                ConsoleMessage("Computer wins the game.");
             else 
                 ConsoleMessage("It's a tie.");
         }
@@ -67,7 +67,7 @@ namespace RockPaperScissorConsole
                 Console.WriteLine("---------------------------------------------------------------------------------");
                 Console.WriteLine("Best of 3 Game.");
                 Console.WriteLine("");
-                Console.WriteLine("Please enter: P - Paper, R - Rock, S - Scissor");
+                Console.WriteLine("Please enter: P - Paper, R - Rock, S - Scissor ");
                 Console.WriteLine();
             }
             else if (msg == OutcomeEnums.Wrong_Entry.ToString())

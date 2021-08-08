@@ -6,8 +6,6 @@ namespace RockPaperScissor.RockPaperScissor.Interfaces
 {
     public interface IRockPaperScissorService
     {        
-        enum GesturEnums { };
-        
         bool IsValidEntry(char humanKeyEntry);
 
         string StartGame(char PlayerEntry);
