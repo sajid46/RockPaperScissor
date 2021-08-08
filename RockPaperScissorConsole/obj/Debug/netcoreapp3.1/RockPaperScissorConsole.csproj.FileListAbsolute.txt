@@ -10,3 +10,9 @@ C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\Ro
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\obj\Debug\netcoreapp3.1\RockPaperScissorConsole.dll
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\obj\Debug\netcoreapp3.1\RockPaperScissorConsole.pdb
 C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\obj\Debug\netcoreapp3.1\RockPaperScissorConsole.genruntimeconfig.cache
+C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\obj\Debug\netcoreapp3.1\RockPaperScissorConsole.csproj.CopyComplete
+C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\obj\Debug\netcoreapp3.1\RockPaperScissorConsole.csproj.AssemblyReference.cache
+C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\bin\Debug\netcoreapp3.1\RockPaperScissor.dll
+C:\Users\Sajid\OneDrive\Projects\CompanyTests\Contract Tests\RockPaperScissor\RockPaperScissorConsole\bin\Debug\netcoreapp3.1\RockPaperScissor.pdb

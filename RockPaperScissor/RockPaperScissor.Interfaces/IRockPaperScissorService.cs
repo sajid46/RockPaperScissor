@@ -4,14 +4,14 @@ using System.Text;
 
 namespace RockPaperScissor.RockPaperScissor.Interfaces
 {
-    public interface IRockPaperScissor
-    {
-        void ConsolStartGame();
+    public interface IRockPaperScissorService
+    {        
         enum GesturEnums { };
+        
         bool IsValidEntry(char humanKeyEntry);
 
-        string PlayGame(char HumanEntry, char ComputerEntry);
-
-        void ConsoleMessage(string msg = null);
+        string StartGame(char PlayerEntry);
+        
+        string PlayGame(char PlayerEntry, char ComputerEntry);
     }
 }

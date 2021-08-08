@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NuQUS8DXmBW9ixfHJqDMyu2x0YlaWWgwUJ4tq5/Bkf8e7ZORIlIa+eUVcvjCbyn+5Izbbd6crl7cG6uPppbCvg==",
+  "dgSpecHash": "eM8p2w5kAdBKgGceuke+D95GZ90iIypZCRUBOGprNGptcdz8eQMGq9iyhLD6BZLD+o8x+VkmwBw7YU0O8lgNrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sajid\\OneDrive\\Projects\\CompanyTests\\Contract Tests\\RockPaperScissor\\RockPaperScissorConsole\\RockPaperScissorConsole.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Sajid\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+    "C:\\Users\\Sajid\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
