@@ -12,9 +12,12 @@ namespace RockPaperScissor.RockPaperScissor.Service
         public RockPaperScissorService()
         {
         }
-        
+
         public enum GesturEnums { Paper = 1, Rock, Scissor }
-        
+        public enum OutcomeEnums { Player_Wins = 1, Computer_Wins, Tie,
+            Wrong_Entry
+        }
+
         public bool IsValidEntry(char PlayerEntry)
         {
             if (PlayerEntry == 'P' || PlayerEntry == 'R' || PlayerEntry == 'S')
@@ -33,7 +36,7 @@ namespace RockPaperScissor.RockPaperScissor.Service
         {
             var IsValid = IsValidEntry(PlayerEntry);
             if (IsValid == false)
-                return "wrong entry";
+                return OutcomeEnums.Wrong_Entry.ToString();
 
             var results = Outcome(PlayerEntry, ComputerEntry);
 
@@ -47,20 +50,20 @@ namespace RockPaperScissor.RockPaperScissor.Service
 
             if (PlayerGesture == GesturEnums.Paper.ToString())
             {
-                if (ComputerGesture == GesturEnums.Rock.ToString()) return "Player Wins";
-                if (ComputerGesture == GesturEnums.Scissor.ToString()) return "Computer Wins";
+                if (ComputerGesture == GesturEnums.Rock.ToString()) return OutcomeEnums.Computer_Wins.ToString();
+                if (ComputerGesture == GesturEnums.Scissor.ToString()) return OutcomeEnums.Player_Wins.ToString();
             }
             if (PlayerGesture == GesturEnums.Rock.ToString())
             {
-                if (ComputerGesture == GesturEnums.Scissor.ToString()) return "Player Wins";
-                if (ComputerGesture == GesturEnums.Paper.ToString()) return "Computer Wins";
+                if (ComputerGesture == GesturEnums.Scissor.ToString()) return OutcomeEnums.Player_Wins.ToString();
+                if (ComputerGesture == GesturEnums.Paper.ToString()) return OutcomeEnums.Computer_Wins.ToString();
             }
             if (PlayerGesture == GesturEnums.Scissor.ToString())
             {
-                if (ComputerGesture == GesturEnums.Paper.ToString()) return "Player Wins";
-                if (ComputerGesture == GesturEnums.Rock.ToString()) return "Player Wins";
+                if (ComputerGesture == GesturEnums.Paper.ToString()) return OutcomeEnums.Player_Wins.ToString();
+                if (ComputerGesture == GesturEnums.Rock.ToString()) return OutcomeEnums.Computer_Wins.ToString();
             }
-            return "Its Tie";
+            return OutcomeEnums.Tie.ToString(); ;
         }
 
         public char GetComputerHand()

@@ -7,10 +7,15 @@ namespace RockPaperScissorConsole
 {
     public class Program
     {
-        private static char humanEntry;
+        private static char playerHandGesture;
         private static string consoleMessage;
         private static int computerWins;
         private static int humanWins;
+        enum OutcomeEnums
+        {
+            Player_Wins = 1, Computer_Wins, Tie,
+            Wrong_Entry
+        }
 
         static void Main(string[] args)
         {
@@ -29,18 +34,19 @@ namespace RockPaperScissorConsole
             int count = 0;
             while (count < 3)
             {
-                humanEntry = (char)Console.ReadKey().Key;
-                consoleMessage = prs.StartGame(humanEntry);
+                playerHandGesture = (char)Console.ReadKey().Key;
+                consoleMessage = prs.StartGame(playerHandGesture);
+
                 ConsoleMessage(consoleMessage);
-                if (consoleMessage == "WRONG ENTRY")
+                if (consoleMessage == OutcomeEnums.Wrong_Entry.ToString())
                 {
                     continue;
                 }
                 count++;
 
-                if (consoleMessage.ToUpper() == "PLAYER WINS")
+                if (consoleMessage == OutcomeEnums.Player_Wins.ToString())
                     humanWins++;
-                else if (consoleMessage.ToUpper() == "COMPUTER WINS")
+                else if (consoleMessage.ToUpper() == OutcomeEnums.Computer_Wins.ToString())
                     computerWins++;
             }
 
@@ -64,7 +70,7 @@ namespace RockPaperScissorConsole
                 Console.WriteLine("Please enter: P - Paper, R - Rock, S - Scissor");
                 Console.WriteLine();
             }
-            else if (msg == "WRONG ENTRY")
+            else if (msg == OutcomeEnums.Wrong_Entry.ToString())
             {
                 Console.WriteLine();
                 Console.WriteLine("Please enter a valid entry: P - Paper, R - Rock, S - Scissor");
@@ -72,7 +78,7 @@ namespace RockPaperScissorConsole
             else 
             {
                 Console.WriteLine();
-                Console.WriteLine(msg);
+                Console.WriteLine(msg.Replace("_", " "));
                 Console.WriteLine();
             }
 
